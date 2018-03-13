@@ -1,0 +1,6 @@
+{
+  "name": "redirect",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
