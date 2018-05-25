@@ -22,7 +22,7 @@ const log = (r, m) => {
     message: r
   };
 
-  Logger.info({}, m)
+  Logger.info({message: r.headers}, m)
 }
 
 const requestHandler = (request, response) => {
