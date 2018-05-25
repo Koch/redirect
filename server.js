@@ -17,7 +17,7 @@ const Logger = bunyan.createLogger({
   ]
 });
 
-const log = (r, m) => {
+function log(r, m) {
   var payload = {
     message: r
   };
