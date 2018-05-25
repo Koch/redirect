@@ -17,12 +17,12 @@ const Logger = bunyan.createLogger({
   ]
 });
 
-function log(r, m) {
+const log = (r, m) => {
   var payload = {
     message: r
   };
 
-  Logger.info(r, m)
+  Logger.info(payload, m)
 }
 
 const requestHandler = (request, response) => {
