@@ -34,7 +34,7 @@ const requestHandler = (request, response) => {
     response.end('ok');
   } else {
     response.writeHead(301, { Location: `${process.env.REDIRECT_URL}` });
-    res.end();
+    response.end();
   }
 }
 
