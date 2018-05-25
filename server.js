@@ -3,9 +3,10 @@ const http = require('http');
 const port = process.env.PORT || 8080;
 
 const requestHandler = (request, response) => {
-  if (request.url === '/health') {
+  if (request.url === '/health' || request.url === 'health') {
     response.end('ok');
   } else {
+    console.log(`forwarding request to ${process.env.REDIRECT_URL}`);
     response.writeHead(301, { Location: `${process.env.REDIRECT_URL}` });
   }
 }

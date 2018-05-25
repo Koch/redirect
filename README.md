@@ -1,1 +1,1 @@
-small server just to redirect to port 8443
+small server just to redirect to another url
